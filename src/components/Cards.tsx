@@ -1,6 +1,7 @@
-import classes from "./Cards.module.css";
+// import styles from "./Card.module.css";
+import "./Card.css";
 
-function randomCard(cards: number[]) {
+function randomCard(cards: string[]) {
   return cards[Math.floor(Math.random() * cards.length)];
 }
 
@@ -8,12 +9,12 @@ const aboveTen = [
   "https://raw.githubusercontent.com/richardschneider/cardsJS/master/cards/KD.svg",
   "https://raw.githubusercontent.com/richardschneider/cardsJS/master/cards/QS.svg",
   "https://raw.githubusercontent.com/richardschneider/cardsJS/master/cards/JS.svg",
-  "https://raw.githubusercontent.com/richardschneider/cardsJS/master/cards/10C.svg"
+  "https://raw.githubusercontent.com/richardschneider/cardsJS/master/cards/10C.svg",
 ];
 
 export default function Cards(props: any) {
   return (
-    <div className={classes.card}>
+    <div className="card">
       {props.val === 1 && (
         <img
           src="https://raw.githubusercontent.com/richardschneider/cardsJS/master/cards/AC.svg"

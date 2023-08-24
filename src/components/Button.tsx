@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Button } from "grommet";
 import { GameContext } from "../store/game-context";
-//import { useRules } from "../hooks/useRules";
+import { useRules } from "../hooks/useRules";
 
 export default function PlayButton(props: any) {
   const gameCtx = useContext(GameContext);
